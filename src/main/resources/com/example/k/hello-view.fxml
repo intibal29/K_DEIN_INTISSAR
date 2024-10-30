@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.k.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="388.0" prefWidth="475.0"
+            xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.k.HelloController">
+    <!-- Fondo de pantalla -->
+    <ImageView fitHeight="388.0" fitWidth="475.0" pickOnBounds="true">
+        <Image url="@images/fondoReloj.png"/>
+    </ImageView>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+    <!-- Dígitos del reloj -->
+    <ImageView fx:id="s2" fitHeight="100.0" fitWidth="55.0" layoutX="400.0" layoutY="182.0"/>
+    <ImageView fx:id="s1" fitHeight="100.0" fitWidth="55.0" layoutX="338.0" layoutY="182.0"/>
+    <ImageView fx:id="min2" fitHeight="100.0" fitWidth="55.0" layoutX="246.0" layoutY="182.0"/>
+    <ImageView fx:id="min1" fitHeight="100.0" fitWidth="55.0" layoutX="191.0" layoutY="182.0"/>
+    <ImageView fx:id="h2" fitHeight="100.0" fitWidth="55.0" layoutX="92.0" layoutY="182.0"/>
+    <ImageView fx:id="h1" fitHeight="100.0" fitWidth="55.0" layoutX="37.0" layoutY="182.0"/>
+</AnchorPane>
